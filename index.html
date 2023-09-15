@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Main Board</title>
+	<link rel="icon" type="image/x-icon" href=".\icon\favicon\cube-1.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<style type="text/css">
+	body {
+		background-color: #101010;		
+		height: 100%
+		--background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		--filter: grayscale(100%) blur(1px);
+	}
+	
+	summary {
+		color: White;
+		text-shadow: 1px 1px DarkSlateBlue;
+	}
+		
+	a {
+		color: Silver; /*Цвет ссылок*/;
+		a:visited color: #cecece; /*Цвет посещенных ссылок*/;
+		a:active color: #ffff00; /*Цвет активных ссылок*/;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		color: LavenderBlush;
+		background: LightSlateGrey;		
+		border-radius: 2px;
+		padding: .1em;
+		--font-size: 1vw;
+	}
+	
+	.grayscale {
+		filter: grayscale(0.85);
+		--filter: grayscale(0.85) blur(1px);
+		transition: 0.3s;
+		padding-right: 15px;
+	}
+		
+	.grayscale:hover {
+		filter: grayscale(0);			
+	}
+	
+	#grid { 
+		display: grid;
+		--grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-gap: 0.3vw;
+	}
+
+	#grid > div {
+		border-radius: 5px;
+		padding: .5em;
+		margin: 2px 2px 5px 0px;
+		font-size: 0.8vw;
+		text-align: left;
+		--background: rgba(128, 128, 128, 0.4);
+		--background: linear-gradient(rgba(105, 105, 105, 0.4) 32px, rgba(128, 128, 128, 0.5) 10%);
+		--background: linear-gradient(rgba(105, 105, 105, 1) 32px, rgba(105, 105, 105, 0.4) 10%);
+		--background: linear-gradient(rgba(65, 74, 91, 1) 32px, rgba(112, 128, 144, 0.35) 10%);
+		--background: linear-gradient(rgba(100, 100, 100, 0.5) 32px, rgba(65, 65, 65, 0.4) 10%);
+		background: linear-gradient(rgba(60, 60, 60, 0.5) 32px, rgba(45, 45, 40, 0.2) 1%);
+		
+	}
+	
+	ol, ul {
+		padding: 0; /* Убираем поля */
+		margin-left: 18px; /* Отступ слева */
+		color: Gray;
+	}
+	
+</style>
+</head>
+
+
+<body>
+	<div>
+		<a href='https://www.google.com/' target="_blank"><img class='grayscale' width='50px' alt="Google" src=".\icon\Google2.png"></a>
+		<a href='http://youtube.com/' target="_blank"><img class='grayscale' width='50px' alt="YouTube" src=".\icon\YouTube.png"></a>	
+		<a href='https://ru.wikipedia.org/wiki/Заглавная_страница' target="_blank"><img class='grayscale' width='50px' alt="Wikipedia" src=".\icon\Wikipedia2.png"></a>
+		<a href='https://www.deepl.com/ru/translator#en/ru/' target="_blank"><img class='grayscale' width='50px' alt="Переводчик DeepL" src=".\icon\DeepL.png"></a>
+		<a href='https://translate.google.com/?hl=ru' target="_blank"><img class='grayscale' width='50px' alt="Переводчик Google" src=".\icon\GoogleTranslate.png"></a>
+		<a href='https://www.google.com.ua/maps/@48.5064274,31.059617,6.75z?hl=ru' target="_blank"><img class='grayscale' width='50px' alt="Карта Google" src=".\icon\GoogleMaps2.png"></a>
+		<a href='https://www.openstreetmap.org/#map=6/47.732/30.685' target="_blank"><img class='grayscale' width='50px' alt="Карта Google" src=".\icon\OpenStreetMap-1.png"></a>
+		<a href='https://www.google.com/intl/ru/gmail/about/' target="_blank"><img class='grayscale' width='50px' alt="Google Mail" src=".\icon\Gmail.png"></a>
+		<a href='https://duckduckgo.com/' target="_blank"><img class='grayscale' width='50px' alt="DuckDuckGo" src=".\icon\DuckDuckGo.png"></a>	
+		<a href='https://www.dogpile.com/' target="_blank"><img class='grayscale' width='50px' alt="Dogpile" src=".\icon\Dogpile.png"></a>
+		<a href='https://www.shodan.io' target="_blank"><img class='grayscale' width='50px' alt="Shodan" src=".\icon\ShoDan2.png"></a>
+		<a href='https://www.startpage.com' target="_blank"><img class='grayscale' width='50px' alt="Startpage" src=".\icon\Startpage.png"></a>	
+		<a href='https://swisscows.com/ru' target="_blank"><img class='grayscale' width='50px' alt="Swisscows" src=".\icon\Swisscows.png"></a>	
+		<a href='https://tineye.com' target="_blank" title="Поисковик для картинок"><img class='grayscale' width='50px' alt="TinEye" src=".\icon\TinEye.png"></a>
+		<a href='https://archive.org' target="_blank"><img class='grayscale' width='60px' alt="Arhive" src=".\icon\Wayback_Machine.png"></a>
+		<a href='https://sinoptik.ua/погода-запорожье/10-дней' target="_blank"><img class='grayscale' width='50px' alt="SINOPTIK" src=".\icon\weather-13.png"></a>	
+	</div>
+		
+	<hr>	
+	
+	<div id="grid">
+		<!--
+		<div>
+			<details open>
+				<summary>Поисковики</summary>	
+				<ol>				  
+				</ol>
+			</details>
+		</div>
+		
+		https://colorscheme.ru/html-colors.html		
+		https://html5book.ru/html-tags/
+		-->
+		
+		<div>
+			<details open>
+				<summary>Новости</summary>	
+				<ol>
+					<li><a target="_blank" href='https://korrespondent.net'>Корреспондент</a></li>
+					<li><a target="_blank" href='https://www.pravda.com.ua/rus/'>Украинская правда</a></li>
+					<li><a target="_blank" href='https://www.epravda.com.ua'>Экономическая правда</a></li>
+					<li><a target="_blank" href='https://www.unian.net'>Unian</a></li>
+					<li><a target="_blank" href='https://ru.interfax.com.ua'>InterFax</a></li>
+					<li><a target="_blank" href='https://ru.euronews.com'>EuroNews</a></li>
+					<li><a target="_blank" href='https://www.bbc.com/russian'>BBC rus</a></li>
+				</ol>
+			</details>
+		</div>
+		
+	
+		<div>
+			<details>
+				<summary>Money</summary>	
+				<ol>
+					<li><a target="_blank" href='https://www.forexfactory.com'>ForexFactory</a></li>
+					<li><a target="_blank" href='https://coinmarketcap.com/ru/'>CoinMarketCap</a></li>
+					<li><a target="_blank" href='https://www.usdebtclock.org'>U.S. National Debt Clock : Real Time</a></li>
+					<li><a target="_blank" href='https://www.numbeo.com/cost-of-living/'>Cost of Living</a></li>
+					<li><a target="_blank" href='https://app.ctrader.com'>cTrader</a></li>
+					<li><a target="_blank" href='https://ru.investing.com'>Investing.com</a></li>
+					<li><a target="_blank" href='https://finviz.com/map.ashx?t=geo'>FinViz - World Map</a></li>
+					<li><a target="_blank" href='https://www.db-markets.com/settlement'>Deutsche Bank quotes</a></li>
+					<li><a target="_blank" href='https://www.bloomberg.com/energy'>Bloomberg - Energy Markets</a></li>
+					<li><a target="_blank" href='https://www.imf.org/external/np/fin/data/rms_sdrv.aspx'>INTERNATIONAL MONETARY FUND - SDR Valuation</a></li>
+					<li><a target="_blank" href='http://www.lmelive.com/'>LMElive Home Page</a></li>
+					<li><a target="_blank" href='http://www.investopedia.com/'>Investopedia - Educating the world about finance</a></li>
+					<li><a target="_blank" href='https://www.world-mining-data.info'>World Mining Data</a></li>
+					<li><a target="_blank" href='https://www.indexmundi.com/en/commodities/minerals/'>Mineral Commodities Production and Trade Statistics</a></li>
+				</ol>
+			</details>
+		</div>
+		
+		
+		<div>
+			<details>
+				<summary>Аудио, Видео, Документы, Изображение</summary>
+				<ol>
+					<li><a target="_blank" href='https://mp3cut.net/ru/'>Audio Cutter - Обрезать песню</a></li>
+					<li><a target="_blank" href='https://ru.savefrom.net/1-быстрый-способ-скачать-с-youtube-160/'>SaveFrom</a></li>
+					<li><a target="_blank" href='https://clideo.com/ru'>Clideo.com</a></li>
+					<li><a target="_blank" href='https://www.topazlabs.com'>Topaz Labs</a></li>
+					<br>
+					<li><a target="_blank" href='https://www.office.com'>Microsoft 365</a></li>
+					<li><a target="_blank" href='https://www.openoffice.org/ru/'>OpenOffice</a></li>
+					<li><a target="_blank" href='https://ru.libreoffice.org'>LibreOffice</a></li>
+					<li><a target="_blank" href='https://www.ilovepdf.com/ru/edit-pdf'>iLovePDF</a></li>
+					<li><a target="_blank" href='https://smallpdf.com/ru/edit-pdf'>Smallpdf</a></li>
+					<li><a target="_blank" href='https://avepdf.com/ru'>AvePDF</a></li>					
+					<br>					
+					<li><a target="_blank" href='https://www.imgonline.com.ua/combine-two-images-into-one.php'>IMGonline.com.ua</a></li>
+					<li><a target="_blank" href='https://fotostars.me'>Fotostart</a></li>
+					<li><a target="_blank" href='https://imagecolorpicker.online/ru/'>ImageColorPicker.online</a></li>
+					<br>
+					<li><a target="_blank" href='https://www.flaticon.com/ru/'>Flaticon</a></li>
+					<li><a target="_blank" href='https://www.stickpng.com'>StickPNG</a></li>
+					<li><a target="_blank" href='http://ru.freepik.com/free-icons'>FreePIC</a></li>
+					<li><a target="_blank" href='https://www.shutterstock.com/ru/search/иконки?language=ru'>Иконки: изображения без лицензионных платежей</a></li>
+					<li><a target="_blank" href='https://gifer.com/ru/gifs/icon'>GIFER</a></li>
+					<li><a target="_blank" href='https://icons8.ru/icons'>Icons8</a></li>
+					<br>
+					<li><a target="_blank" href='https://wallpaperscraft.ru/all/3840x2400'>WallpapersCraft - Обои для рабочего стола</a></li>
+				</ol>
+			</details>
+		</div>
+		
+		<div>
+			<details>
+				<summary>Анонимные сервисы: сообщения, почта</summary>	
+				<ol>
+					<li><a target="_blank" href='https://pastebin.com/'>Pastebin.com</a></li>
+					<li><a target="_blank" href='https://privnote.com/#destroyed'>Privnote.com</a></li>
+					<li><a target="_blank" href='https://justnotepad.com/ru/'>Justnotepad.com</a></li>
+					<br>
+					<li><a target="_blank" href='https://temp-mail.org/ru/'>Temp-Mail.org</a></li>
+					<li><a target="_blank" href='https://tempmail.plus/ru/#!'>TempMail.Plus</a></li>
+					<li><a target="_blank" href='https://www.mohmal.com/ru'>Mohmal</a></li>					
+				</ol>
+			</details>
+		</div>
+		
+		
+		<div>
+			<details>
+				<summary>Services: net, passwd, soft</summary>	
+				<ol>
+					<li><a target="_blank" href='https://www.speedtest.net'>SpeedTest</a></li>
+					<li><a target="_blank" href='https://2ip.ua/ru/'>2IP</a></li>
+					<li><a target="_blank" href='https://who.is'>Who IS</a></li>
+					<li><a target="_blank" href='https://downdetector.com'>Downdetector: Real-time problem & outage monitoring</a></li>
+					<li><a target="_blank" href='https://trends.google.ru/trends/trendingsearches/daily?geo=UA&hl=ru'>Google Trends</a></li>
+					<li><a target="_blank" href='https://ru.wikipedia.org/wiki/Список_портов_TCP_и_UDP'>Список портов TCP и UDP</a></li>
+					<li><a target="_blank" href='https://www.teamviewer.com/ru-cis/'>TeamViewer(скачать)</a></li>
+					<br>					
+					<li><a target="_blank" href='https://genpas.peter23.com'>Генератор паролей</a></li>
+					<br>
+					<li><a target="_blank" href='https://ninite.com'>Ninite</a></li>
+					<br>
+					<li><a target="_blank" href='https://surl.li/ru'>Surli</a></li>
+				</ol>
+			</details>
+		</div>
+		
+		
+		<div>
+			<details>
+				<summary>Online IDE</summary>	
+				<ol>					
+					<li><a target="_blank" href='https://www.tutorialspoint.com/online_python_compiler.php'>Tutorials Point - Online Python Compiler (Interpreter)</a></li>
+					<li><a target="_blank" href='https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_python'>W3Schools - Online Python Compiler (Interpreter)</a></li>
+					<li><a target="_blank" href='https://www.programiz.com/python-programming/online-compiler/'>Programiz - Python Online Compiler</a></li>
+					<br>
+					<li><a target="_blank" href='https://crontab.guru'>Cronitor.io</a></li>
+					<li><a target="_blank" href='https://regex101.com'>REGEX101.COM</a></li>
+					<br>
+					<li><a target="_blank" href='https://replit.com'>REPL.IT</a></li>
+					<li><a target="_blank" href='http://sqlfiddle.com'>sqlfiddle.COM</a></li>
+					<li><a target="_blank" href='https://playcode.io'>playcode.IO</a></li>					
+				</ol>
+			</details>
+		</div>
+		
+		
+		<div>
+			<details>
+				<summary>Code practice</summary>	
+				<ol>
+					<li><a target="_blank" href='https://www.codewars.com'>CodeWars</a></li>
+				</ol>
+			</details>
+		</div>
+		
+		
+		<div>
+			<details>
+				<summary>Python</summary>	
+				<ol>
+					<li><a target="_blank" href='https://pypi.org'>Индекс пакетов Python (PyPI)</a></li>
+					<li><a target="_blank" href='https://django.fun/ru/'>Документация по фреймворку и библиотекам Django</a></li>
+					<li><a target="_blank" href='https://pythonworld.ru/tipy-dannyx-v-python/slovari-dict-funkcii-i-metody-slovarej.html'>Словари (dict) и работа с ними. Методы словарей</a></li>
+					<li><a target="_blank" href='https://pythonworld.ru/tipy-dannyx-v-python/spiski-list-funkcii-i-metody-spiskov.html'>Списки (list). Функции и методы списков</a></li>
+					<li><a target="_blank" href='https://pythonworld.ru/tipy-dannyx-v-python/stroki-funkcii-i-metody-strok.html'>Строки. Функции и методы строк</a></li>
+					<li><a target="_blank" href='https://pythonworld.ru/tipy-dannyx-v-python/chisla-int-float-complex.html'>Числа: целые, вещественные, комплексные</a></li>					
+					<li><a target="_blank" href='https://pythonworld.ru/moduli/modul-copy.html'>COPY - поверхностное и глубокое копирование объектов</a></li>					
+					<li><a target="_blank" href='https://ru.stackoverflow.com/questions/756119/чем-отличается-символ-xa0-от-простого-пробела'>чем отличается символ \xa0 от простого пробела</a></li>					
+					<li><a target="_blank" href='https://www.youtube.com/watch?v=ZhcWYaEhavY'>LEGB-rule. Как Python ищет имена переменных</a></li>
+				</ol>
+			</details>
+		</div>
+		
+				
+		<div>
+			<details>
+				<summary>OS screens, графика</summary>
+				<ol>
+					<li><a target="_blank" href='https://geektyper.com'>GEEKTyper.com - Hacking Simolator</a></li>
+					<li><a target="_blank" href='http://www.therestartpage.com'>therestartpage</a></li>
+					<li><a target="_blank" href='antonn.ru'>Windows 98</a></li>
+					<li><a target="_blank" href='geekprank.com'>Windows XP</a></li>
+					<li><a target="_blank" href='sewin.net'>Windows 7</a></li>
+					<li><a target="_blank" href='https://fakeupdate.net'>Поддельные «обновления» Windows</a></li>
+					<br>
+					<li><a target="_blank" href='https://arkadia.xyz'>Arkadia Zoomquilt</a></li>
+					<li><a target="_blank" href='http://hydromeda.org'>Hydromeda</a></li>
+					<li><a target="_blank" href='https://codepen.io/akm2/full/AGgarW'>Gravity Points</a></li>
+					<li><a target="_blank" href='https://mrdoob.com'>Mr.doob</a></li>					
+					<li><a target="_blank" href='https://im-possible.info/russian/library/index.html'>Невозможный мир: Библиотека фигур</a></li>					
+				</ol>
+			</details>
+		</div>
+		
+		<div>
+			<details>
+				<summary style="color: grey">NULL</summary>				
+			</details>
+		</div>
+		
+		<div>
+			<details>
+				<summary>Карты</summary>
+					<ol>
+						<li><a target="_blank" href='https://alarmmap.online'>Воздушная тревога</a></li>
+						<li><a target="_blank" href='https://deepstatemap.live/#6/49.311/32.047'>DeepState</a></li>
+						<br>
+						<li><a target="_blank" href='https://www.wunderground.com/wundermap'>Wundermap</a></li>
+						<br>
+						<li><a target="_blank" href='https://www.blitzortung.org/ru/live_lightning_maps.php'>Blitzortung</a></li>
+						<li><a target="_blank" href='https://www.lightningmaps.org'>Lightning map</a></li>
+						<br>
+						<li>
+						<details>
+							<summary>Kp-indices</summary>
+							<ol>
+								<li><a target="_blank" href='https://www.spaceweatherlive.com/ru.html'>SpaceWeatherLive</a></li>
+								<li><a target="_blank" href='https://www.spaceweatherlive.com/en/auroral-activity/aurora-forecast.html'>SpaceWeatherLive: Kp-indices</a></li>
+								<li><a target="_blank" href='https://www.swpc.noaa.gov'>Space Weather Prediction Center</a></li>
+								<li><a target="_blank" href='https://www.swpc.noaa.gov/products/planetary-k-index'>Space Weather Prediction Center: PLANETARY K-INDEX</a></li>
+								<li><a target="_blank" href='https://www.gi.alaska.edu/monitors/aurora-forecast'>AURORA FORECAST</a></li>
+								<li><a target="_blank" href='https://seetheaurora.com/kp-index/map.html'>SeeTheAurora</a></li>
+								<li><a target="_blank" href='https://www.gi.alaska.edu/monitors/aurora-forecast'>Geophysical Institute</a></li>
+								<li><a target="_blank" href='https://www.ventusky.com/?p=48.52;31.62;6&l=pressure'>VENTUSKY</a></li>
+								<li><a target="_blank" href='https://www.weatherpro.com/en/ukraine/zaporizhzhia-oblast/zaporizhzhia-oblast/forecast'>Weather in Zaporizhzhya</a></li>
+								<li><a target="_blank" href='https://classic.nullschool.net/ru/#current/wind/surface/level/orthographic=-324.68,47.47,1046'>___</a></li>
+							</ol>
+						</details>
+						</li>
+						<br>						
+						<li><a target="_blank" href='https://www.flightradar24.com/46.96,35.05/6'>Flightradar24</a></li>
+						<li><a target="_blank" href='https://www.marinetraffic.com/en/ais/home/centerx:18.9/centery:52.0/zoom:4'>MarineTraffic</a></li>						
+						<br>						
+						<li><a target="_blank" href='http://geacron.com/home-ru/?lang=ru'>Интерактивный Исторический Атлас Мира с 3000 до н.э</a></li>												
+						<li><a target="_blank" href='https://histography.io'>HISTOGRAPHY</a></li>												
+						<br>
+						<li><a target="_blank" href='https://www.thetruesize.com'>The True Size Of...</a></li>
+						<li><a target="_blank" href='https://nuclearsecrecy.com/nukemap/'>NUKEMAP</a></li>						
+						<li><a target="_blank" href='https://worldmapper.org'>Worldmapper</a></li>						
+						<li><a target="_blank" href='https://mapstyle.withgoogle.com'>Cloud-based Maps Styling</a></li>						
+					</ol>
+			</details>
+		</div>
+		
+		
+		<div>
+			<details>
+				<summary>Книги</summary>
+				<ul>
+					<li>
+						<details>
+							<summary>Скачать</summary>
+							<ol>
+								<li><a target="_blank" href='https://ru.pdfdrive.com'>PDF Drive</a></li>
+								<li><a target="_blank" href='http://forcoder.ru'>ForCoder</a></li>
+								<li><a target="_blank" href='https://library-it.com/programming/'>Library</a></li>
+								<li><a target="_blank" href='https://iknigi.net/filtr-po-knigam/zhanr/Компьютеры/'>iknigi</a></li>
+								<li><a target="_blank" href='https://www.proklondike.com/books.html'>Programmer’s Klondike</a></li>
+								<li><a target="_blank" href='https://helloworld.ru'>HELLOWORLD.RU</a></li>
+								<li><a target="_blank" href='https://fictionbook.ru/genre/programming/'>Фикшнбук</a></li>
+								<li><a target="_blank" href='http://www.coders-library.ru'>Библиотека программиста</a></li>
+								<li><a target="_blank" href='https://midlcode.com/ru/books/'>MidlCode</a></li>
+								<li><a target="_blank" href='https://mybook.ru/catalog/kompyutery/programmirovanie/'>MyBook</a></li>
+								<li><a target="_blank" href='http://progbook.ru'>ProgBook</a></li>
+								<li><a target="_blank" href='https://coollib.net/g/comp_prog_python'>CoolLib</a></li>
+								<li><a target="_blank" href='https://www.htbook.ru'>Техническая литература</a></li>
+								<li><a target="_blank" href='https://www.twirpx.com'>Twirpx</a></li>
+								<li><a target="_blank" href='https://readli.net/cat/spravochnaya-literatura/computery-i-internet/'>Ридли</a></li>
+								<li><a target="_blank" href='https://sd.blackball.lv/books'>WebDynamics</a></li>
+								<li><a target="_blank" href='https://t.me/s/it_boooks'>Программирование | книги</a></li>
+								<li><a target="_blank" href='https://fb2lib.ru/python/'>FB2Lib</a></li>
+								<li><a target="_blank" href='https://urait.ru'>Юрайт</a></li>
+								<li><a target="_blank" href='https://webbooks.com.ua'>WebBooks</a></li>
+							</ol>
+						</details>
+					</li>					
+					<br>
+					
+					<li>
+						<details>
+							<summary>Издательства</summary>
+							<ol>
+								<li><a target="_blank" href='https://dmkpress.com'>ДМК Пресс</a></li>
+								<li><a target="_blank" href='https://www.piter.com'>Издательский дом «Пи́тер»</a></li>
+								<li><a target="_blank" href='http://www.williamspublishing.com/cgi-bin/list.cgi?id=1070475'>Издательская группа "Диалектика-Вильямс"</a></li>
+							</ol>
+						</details>
+					</li>
+					<br>
+					
+					<li>
+						<details>
+							<summary>Магазины</summary>
+							<ol>
+								<li><a target="_blank" href='https://diamail.com.ua'>DiaMail</a></li>
+								<li><a target="_blank" href='https://balka-book.com/ua/kompyuternaya-literatura-596'>BALKA-BOOK</a></li>
+								<li><a target="_blank" href='https://bambooks.com.ua/ua/g117590556-kompyuternaya-leteratura'>Bambook</a></li>
+								<li><a target="_blank" href='https://booksit.com.ua/ru/kompyuternaya-literatura-ru'>Booksit</a></li>					
+								<li><a target="_blank" href='https://lavkababuin.com'>Интернет-магазин «Лавка Бабуин»</a></li>
+								<li><a target="_blank" href='https://liderbooks.com.ua/ua/g5452018-kompyuternaya-literatura'>Liderbooks</a></li>
+								<li><a target="_blank" href='https://read-me.shop/ua/g111266009-literatura'>ReadMe</a></li>
+								<li><a target="_blank" href='https://monster-book.com/programming'>Monster Book</a></li>
+							</ol>
+						</details>
+					</li>
+					
+					
+					<!--
+						https://revall.info/beginning-django-api-with-react-2022.html
+					-->
+				</ul>
+			</details>
+		</div>
+		
+		
+		<div>
+			<details>
+				<summary>Торговые площадки</summary>
+				<ol>
+				  <li><a target="_blank" href='https://hotline.ua/ru/'>HotLine</a></li>
+				  <li><a target="_blank" href='https://prom.ua'>Prom</a></li>
+				  <li><a target="_blank" href='https://www.olx.ua'>OLX</a></li>
+				  <li><a target="_blank" href='https://www.amazon.com'>Amazon</a></li>
+				  <li><a target="_blank" href='https://aliexpress.ru'>AliExpress</a></li>
+				  <li><a target="_blank" href='https://www.joom.com/ru'>Joom</a></li>
+				</ol>
+			</details>
+		</div>
+		
+		
+		<div>
+			<details>
+				<summary>Головоломки, Игры</summary>	
+				<ol>					
+					<li><a target="_blank" href='https://www.chess.com/ru'>Chess.com</a></li>
+					<li><a target="_blank" href='https://ru.y8.com/tags/chess'>Шахматы</a></li>
+					<li><a target="_blank" href='https://lichess.org'>Шахматы Lichess</a></li>
+					<li><a target="_blank" href='https://chessfield.ru/chess-puzzles'>Шахматные задачи онлайн</a></li>
+					<br>
+					<li><a target="_blank" href='https://iamthecu.be'>Rubik’s Cube Explorer</a></li>
+					<br>
+					<li><a target="_blank" href='https://amogus.io'>Amogus</a></li>
+					<li><a target="_blank" href='https://ru.y8.com/games/crime_city_3d'>Crime City 3D</a></li>
+					<li><a target="_blank" href='https://voxiom.io'>Voxiom</a></li>
+					<li><a target="_blank" href='https://warbrokers.io/signin.php'>WarBroker</a></li>
+					<br>					
+					<li><a target="_blank" href='https://jokesland.net.ru/s/ugmk/ugmk.php'>Маневры красного квадрата</a></li>
+					<li><a target="_blank" href='https://www.shortcutfoo.com/app/dojos/command-line/learn'>ShortcutFoo (тренажер "слепого" набора)</a></li>
+					<br>
+					<li><a target="_blank" href='https://gamaverse.ru/c/horror/adventure/'>ХОРРОР · КВЕСТЫ · ИГРЫ ОНЛАЙН</a></li>
+					<li><a target="_blank" href='https://igrovaya.org/games/horror/'>Ужасы/Хорроры</a></li>
+					<li><a target="_blank" href='http://intellector.info/ob-igre'>INTELLECTOR современная интеллектуальная игра</a></li>			  
+				  
+				</ol>
+			</details>
+		</div>
+
+		
+		<div>
+			<details>
+				<summary>Фильмы, Медиа-сервисы</summary>	
+				<ol>
+				  <li><a target="_blank" href='https://filmix.film'>Filmix</a></li>				  
+				  <li><a target="_blank" href='https://rezka.ag'>RezkaHD</a></li>				  
+				  <li><a target="_blank" href='https://kinogo.biz'>KinoGO</a></li>
+				  <li><a target="_blank" href='https://kinokrad.cc'>KinoKrad</a></li>
+				  <br>
+				  <li><a target="_blank" href='https://smotrisport.tv'>Smotrisport.tv</a></li>				  
+				</ol>
+			</details>
+		</div>
+		
+		
+		
+		
+		<!--
+		
+		-->
+		
+	</div>
+</body>
+</html>
