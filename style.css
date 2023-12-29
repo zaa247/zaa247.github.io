@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+	height: 100%;
+    --overflow: hidden; /* Используйте overflow: hidden, чтобы избежать лишней полосы прокрутки на body */
+	overflow-y: auto;
+	background-color: #050505;	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	/* Используйте высоту видимого экрана (viewport height) для контейнера */
+	--height: 100vh; 
+	--height: auto;
+	--min-height: min-content;
+	--height: min-content;
+}
+
+.top {
+	background-color: #151515;
+	top: 0;
+	padding: 5px;
+	position: sticky;
+	margin: 0px 5px;
+	z-index: 100;
+}
+
+.top a:hover {
+	background: none; /* или background: transparent; */
+}
+	
+.grayscale {
+	filter: grayscale(0.85);
+	--filter: grayscale(0.85) blur(1px);
+	transition: 0.3s;
+	padding-right: 15px;
+}
+	
+.grayscale:hover {
+	filter: grayscale(0);
+}
+
+.table {
+	flex: 1; /* Занимайте доступное пространство в контейнере */
+	--overflow-y: auto; /* Добавьте полосу прокрутки только для блока div2, если это необходимо */	
+}
+
+#grid { 
+	display: grid;		
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 0.3vw;
+	margin: 0px 5px;	
+}
+
+#grid > div {
+	border-radius: 5px;
+	padding: .5em;	
+	margin: 2px 2px 5px 0px;	
+	font-size: 0.8vw;
+	text-align: left;	
+	background: linear-gradient(rgba(60, 60, 60, 0.5) 32px, rgba(45, 45, 45, 0.2) 1%);	
+}
+
+summary {
+	color: white;
+    text-shadow: 1px 1px DarkSlateBlue;	
+}
+
+ol, ul {
+	padding: 0; /* Убираем поля */
+	margin-left: 18px; /* Отступ слева */
+	color: Gray;
+	line-height: 1.25
+}
+
+a {
+	color: Silver; /*Цвет ссылок*/;
+	a:active color: #ffff00; /*Цвет активных ссылок*/;
+	a:visited color: #cecece; /*Цвет посещенных ссылок*/;	
+	text-decoration: none;
+}
+
+a:hover {
+	color: LavenderBlush;
+	background: LightSlateGrey;
+	border-radius: 2px;
+	padding: .1em;
+	--font-size: 1vw;
+}
